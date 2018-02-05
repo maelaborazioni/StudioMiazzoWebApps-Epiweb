@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<buildpath>
+	<buildpathentry excluding=".stp/|medias/" kind="src" path=""/>
+	<buildpathentry exported="true" kind="prj" path="/AUT_Shared"/>
+	<buildpathentry exported="true" kind="prj" path="/Anagrafiche"/>
+	<buildpathentry exported="true" kind="prj" path="/EW_Giornaliera"/>
+	<buildpathentry exported="true" kind="prj" path="/EW_Lookup"/>
+	<buildpathentry exported="true" kind="prj" path="/EW_Orario"/>
+	<buildpathentry exported="true" kind="prj" path="/EW_RP"/>
+	<buildpathentry exported="true" kind="prj" path="/EW_Shared"/>
+	<buildpathentry exported="true" kind="prj" path="/EW_Stampe"/>
+	<buildpathentry exported="true" kind="prj" path="/EW_Storico"/>
+	<buildpathentry exported="true" kind="prj" path="/MA_Operations"/>
+	<buildpathentry exported="true" kind="prj" path="/MA_Shared"/>
+	<buildpathentry exported="true" kind="prj" path="/utility"/>
+</buildpath>
