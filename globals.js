@@ -12,6 +12,10 @@ function ma_ew_onSolutionOpen(_startArgs)
 	// Set the callback for checking operations' status
 	globals.vUpdateOperationStatusFunction = forms.mao_history.checkStatusCallback;
 
+	// Visualizzazione icona nuove notifiche
+	if(globals.ma_utl_hasModule(globals.Module.COMUNICAZIONI))
+	   scopes.message.verifyUserMessages(globals.svy_sec_lgn_user_id);
+	
 	// Visualizzazione dati news relative al program name StudioMiazzoWebApps
 	// (solo per gli utenti in possesso della chiave per la rilevazione delle presenze)
 	if (globals.ma_utl_hasKey(globals.Key.RILEVAZIONE_PRESENZE))
@@ -40,7 +44,7 @@ function ma_ew_onSolutionOpen(_startArgs)
 			plugins.busy.block(params);
 			
 		}
-	}
+	}	
 }
 
 /**
