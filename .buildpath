@@ -11,6 +11,5 @@
 	<buildpathentry exported="true" kind="prj" path="/EW_Stampe"/>
 	<buildpathentry exported="true" kind="prj" path="/EW_Storico"/>
 	<buildpathentry exported="true" kind="prj" path="/MA_Operations"/>
-	<buildpathentry exported="true" kind="prj" path="/MA_Shared"/>
 	<buildpathentry exported="true" kind="prj" path="/utility"/>
 </buildpath>

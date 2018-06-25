@@ -1,6 +1,6 @@
 firstFormID:"69202722-7ad6-4728-93f6-b46c84500481",
 i18nDataSource:"db:/svy_framework/i18n_messages",
-modulesNames:"utility,EW_Giornaliera,EW_Shared,MA_Operations,EW_Orario,EW_Storico,EW_Stampe,MA_Shared,Anagrafiche,EW_Lookup,AUT_Shared,EW_RP",
+modulesNames:"utility,EW_Giornaliera,EW_Shared,MA_Operations,EW_Orario,EW_Storico,EW_Stampe,Anagrafiche,EW_Lookup,AUT_Shared,EW_RP",
 onCloseMethodID:"7A5BA424-0891-4A07-A72C-8D7E0C390C1E",
 onErrorMethodID:"-1",
 onOpenMethodID:"243DBAD5-2B09-48A6-8100-3FDAEE87DF57",
