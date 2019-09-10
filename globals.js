@@ -16,7 +16,7 @@ function ma_ew_onSolutionOpen(_startArgs)
 	if(globals.ma_utl_hasModule(globals.Module.COMUNICAZIONI))
 	   scopes.message.verifyUserMessages(globals.svy_sec_lgn_user_id);
 	
-	// Visualizzazione dati news relative al program name StudioMiazzoWebApps
+	// Visualizzazione dati news relative al program name PresenzaSemplice
 	// (solo per gli utenti in possesso della chiave per la rilevazione delle presenze)
 	if (globals.ma_utl_hasKey(globals.Key.RILEVAZIONE_PRESENZE))
 	{
@@ -29,20 +29,22 @@ function ma_ew_onSolutionOpen(_startArgs)
 			
 			plugins.busy.unblock();
 			
-			var params = {
-		        processFunction: process_ew_verifica_ftp,
-		        message: 'Controllo presenza dati inviati dallo studio da acquisire...', 
-		        opacity: 0.5,
-		        paneColor: '#434343',
-		        textColor: '#EC1C24',
-		        showCancelButton: false,
-		        cancelButtonText: '',
-		        dialogName : '',
-		        fontType: 'Arial,4,25',
-		        processArgs: []
-		    };
-			plugins.busy.block(params);
-			
+			if(!globals.ma_utl_hasKey(globals.Key.FTP_NO_CONTROLLO))
+			{
+				var params = {
+			        processFunction: process_ew_verifica_ftp,
+			        message: 'Controllo presenza dati inviati dallo studio da acquisire...', 
+			        opacity: 0.5,
+			        paneColor: '#434343',
+			        textColor: '#EC1C24',
+			        showCancelButton: false,
+			        cancelButtonText: '',
+			        dialogName : '',
+			        fontType: 'Arial,4,25',
+			        processArgs: []
+			    };
+				plugins.busy.block(params);
+			}
 		}
 	}	
 }
