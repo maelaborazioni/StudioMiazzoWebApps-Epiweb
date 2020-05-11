@@ -12,6 +12,9 @@ function ma_ew_onSolutionOpen(_startArgs)
 	// Set the callback for checking operations' status
 	globals.vUpdateOperationStatusFunction = forms.mao_history.checkStatusCallback;
 
+	// Get the universal token for PS API operation requsts
+	scopes.auth.GetPSToken();
+	
 	// Visualizzazione icona nuove notifiche
 	if(globals.ma_utl_hasModule(globals.Module.COMUNICAZIONI))
 	   scopes.message.verifyUserMessages(globals.svy_sec_lgn_user_id);
